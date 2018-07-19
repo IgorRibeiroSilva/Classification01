@@ -1,1 +1,2 @@
-Read-me.
+This will be a simple project for studies purposes.
+I will make a classification program using machine learning techniques, at first, bayesian methods.

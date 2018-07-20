@@ -1,17 +1,17 @@
-import csv
+from readCSV import loadCSVFile
 
-def loadCSVFile():
-    data = []
-    target = []
+X,Y = loadCSVFile()
 
-    filesss = open('dataSnake.csv', 'rb')
-    reader = csv.reader(filesss)
+from sklearn.naive_bayes import MultinomialNB 
 
-    for longBody,creeps,poisonous,isSnake in reader:
+model = MultinomialNB()
+model.fit(X, Y)
+result = model.predict(X)
 
-        data.append([longBody, creeps, poisonous])
-        target.append([isSnake])
+diferents = result - Y
+right = [d for d in diferents if d == 0]
+totalRights = len(right)
+totaLElements = len(X)
+rightRate = 100*totalRights/totaLElements
 
-    return data, target
-
-print(loadCSVFile())
+print(rightRate) 

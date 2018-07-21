@@ -1,3 +1,7 @@
+# This program read a CSV file and classifies using Multinomial Naive Bayes algorithm 
+# and compare the results with a base algorithm.
+# Some features are categoric, so we present a technique to treat them
+
 from collections import Counter
 import pandas as pd
 

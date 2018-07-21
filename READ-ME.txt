@@ -1,7 +1,17 @@
 This will be a simple project for studies purposes.
-I will make a classification program using machine learning techniques, at first, bayesian methods.
+I will make a classification program using machine learning techniques.
 
-- Classification.py is a simple classification program where we can classify animals in birds or snakes using 
-Naive Bayes multinomial algorithm.
+For those who are interested in use these codes for study, 
+we recommend follow this order bellow to a better understanding:
 
-- In ClassificationUsingCSV.py tha classification task is made reading a CSV file.
+1 - Classification.py is a simple classification program where we can classify animals in birds or snakes using 
+    Naive Bayes multinomial algorithm.
+
+2 - In ClassificationUsingCSV.py the classification task is made reading a CSV file.
+    *Files related:
+        -dataSnake.csv
+
+3 - In CategoricClassification.py we classify and compare our algorithm performance with a base algorithm (benchmark)
+    This also is a more generic program.
+    *Files related:
+        -categoricData.csv

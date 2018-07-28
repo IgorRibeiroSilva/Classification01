@@ -10,8 +10,10 @@ we recommend follow this order bellow to a better understanding:
 2 - In ClassificationUsingCSV.py the classification task is made reading a CSV file.
     *Files related:
         -dataSnake.csv
+        -readCSV.py
 
 3 - In CategoricClassification.py we classify and compare our algorithm performance with a base algorithm (benchmark)
     This also is a more generic program.
     *Files related:
         -categoricData.csv
+        -readCSV.py

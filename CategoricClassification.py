@@ -9,10 +9,11 @@ rateTraining = 0.9
 testTraining = 0.1
 
 data = pd.read_csv('categoricData.csv')
-Xdummies_df = pd.get_dummies(data[['home', 'search', 'logged']])
+
+Xdummies_df = pd.get_dummies(data[['longBody', 'color', 'poisonous']])
 
 X = Xdummies_df.values
-Y = data['bought'].values
+Y = data['isSnake'].values
 
 trainingSize = rateTraining*len(Y)
 testSize = testTraining*len(Y)

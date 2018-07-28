@@ -3,13 +3,14 @@
 # samples used for training and calculate the hit rate
 from readCSV import loadCSVFile
 
-X,Y = loadCSVFile()
+X,Y = loadCSVFile('dataSnake.csv')
 
 from sklearn.naive_bayes import MultinomialNB 
 
 model = MultinomialNB()
 model.fit(X, Y)
 result = model.predict(X)
+
 diferents = result - Y
 right = [d for d in diferents if d == 0]
 

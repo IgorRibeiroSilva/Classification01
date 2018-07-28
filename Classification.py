@@ -1,4 +1,4 @@
-#Let's declare some snakes, frogs and its features. For example 'Have a long body', 'sizzle' and 'is poisonous' 
+#Let's declare some snakes, frogs and its features. For example 'Have a long body', 'crawl' and 'is poisonous' 
 snake1 = [1, 1, 1]
 snake2 = [1, 0, 1]
 snake3 = [1, 1, 0]

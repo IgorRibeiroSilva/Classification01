@@ -7,14 +7,14 @@ frog2 = [0, 1, 0]
 frog3 = [1, 0, 1]
 
 #This will be our data array
-data =  [snake1, snake2, frog3, frog1, frog2, frog3]
+data =  [snake1, snake2, snake3, frog1, frog2, frog3]
 
 #And here we have our target array. Value '1' indicates that is a snake, '0' indicates a frog
 target = [1, 1, 1, 0, 0, 0]
 
 #Now let's declare two animals that can be snakes or frogs. Let's use them to test our program
 otherAnimal = [1, 1, 0]
-oneMoreAnimal = [1, 0, 0]
+oneMoreAnimal = [0, 0, 0]
 testArray = [otherAnimal, oneMoreAnimal]
 
 #Importing Naive Bayes module from sklearn

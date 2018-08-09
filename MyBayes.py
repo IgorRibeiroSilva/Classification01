@@ -30,7 +30,6 @@ def analisar(animais_teste, todas_as_probs):
         else:
             print("Sim")
 
-
 # Declarar alguns dados
 animal_1 = [1, 1, 1]
 animal_2 = [1, 1, 0]
@@ -42,6 +41,8 @@ animal_7 = [0, 1, 0]
 animal_8 = [1, 0, 0]
 animais = [animal_1, animal_2, animal_3, animal_4, animal_5, animal_6, animal_7, animal_8]
 target = [1, 1, 0, 0, 1, 0, 1, 0]
+
+#Separar as features
 features_1 = []
 features_2 = []
 features_3 = []
@@ -51,6 +52,8 @@ for animal in animais:
     features_3.append(animal[2])
 
 todas_as_features = [features_1, features_2, features_3]
+
+#Separar as probabilidades
 prob_atender_e_ser = 0
 prob_nao_atender_e_ser = 0
 todas_as_probs = []
@@ -60,6 +63,7 @@ for feature in todas_as_features:
     probs_Feature = [prob_atender_e_ser, prob_nao_atender_e_ser]
     todas_as_probs.append(probs_Feature)
 
+#Testar
 animais_teste = [[1, 1, 1],[0, 0, 0],[1, 0, 0]]
 analisar(animais_teste, todas_as_probs)
 
